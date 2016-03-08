@@ -1,0 +1,53 @@
+{
+
+"configVars": {
+  "app": "app",
+  "appjs": "scripts",
+  "appcss": "styles",
+  "build": "build",
+  "dist": "dist",
+  "hostname": "localhost",
+  "port": 8080
+},
+"bowerFiles": [
+  "angular/angular.js",
+  "angular-waypoints/dist/angular-waypoints.min.js",
+  "angular-route/angular-route.js",
+  "angularAMD/dist/angularAMD.js",
+  "angularAMD/dist/ngload.js",
+  "requirejs/require.js",
+  "es5-shim/es5-shim.js",
+  "json3/lib/json3.js",
+  "angular-animate/angular-animate.js",
+  "angular-cookies/angular-cookies.js",
+  "angular-resource/angular-resource.js",
+  "angular-sanitize/angular-sanitize.js",
+  "angular-touch/angular-touch.js",
+  "angular-messages/angular-messages.js",
+  "angular-aria/angular-aria.js",
+  "angularfire/dist/angularfire.min.js",
+  "firebase/firebase.js",
+  "leaflet/dist/leaflet-src.js",
+  "leaflet/dist/leaflet.js",
+  "leaflet/dist/leaflet.css",
+  "osmbuildings/dist/OSMBuildings-Leaflet.js",
+  "angular-leaflet-directive/dist/angular-leaflet-directive.js",
+  "ngstorage/ngStorage.js",
+  "lodash/dist/lodash.js",
+  "../node_modules/leaflet-control-geocoder/dist/Control.Geocoder.js",
+  "../node_modules/leaflet-control-geocoder/dist/Control.Geocoder.css",
+  "esri-leaflet-geocoder/dist/esri-leaflet-geocoder.js",
+  "esri-leaflet-geocoder/dist/esri-leaflet-geocoder.css",
+  "esri-leaflet/dist/esri-leaflet.js",
+  "angular-material/angular-material.js",
+  "angular-material/angular-material.css",
+  "d3/d3.js",
+  "d3/d3.min.js"
+
+],
+"cssFiles": [],
+"buildFiles": [
+  "images/**"
+]
+
+}

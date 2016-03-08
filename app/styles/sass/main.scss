@@ -1,0 +1,829 @@
+// bower:scss
+// endbower
+
+/*** ==========================================================================
+
+***/
+
+
+.concierge {
+  background: url(/images/blocknext-bg-3.jpg) bottom center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 100px;
+  form { text-align: center; }
+  input { width: 80%; }
+  button { position: absolute; left: -9999px; }
+  #messages {
+    padding: 1vw;
+    max-height: 100%;
+    overflow: scroll;
+    font-size: 1.5rem;
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/*** ==========================================================================
+
+***/
+
+
+* { margin: 0; padding: 0; }
+
+input, button, select, textarea {
+  font-family: 'Abel', sans-serif !important;
+  font-size: 1.325rem;
+}
+
+button {
+  font-size: 2rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  padding          : 0;
+  font-family      : 'Abel', sans-serif;
+  border-top       : 10px #0C5975 solid;
+
+  background: rgba(0, 0, 0, .8);
+}
+
+.header {
+  /*border-top: 10px #5c5880 solid;*/
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 9000;
+  width: 100%;
+}
+.header .inner {
+  display: flex;
+  padding: 2.5vh 0;
+  a { cursor: pointer; }
+  .navbar-header {
+    width: 25%;
+    text-align: center;
+    a { color: #fff; font-size: 1.5rem; text-decoration: none; }
+    img { position: relative; top: -.5rem; width: 50px; }
+  }
+  .collapse {
+    width: 75%;
+  }
+  .nav.navbar-nav {
+    width: 100%;
+    display: flex;
+    font-size: 1.325rem;
+    li { display: inline-block; width: 33%; list-style: none; text-align: center; }
+    a { display: block; color: #fff; font-weight: normal; padding: 0 2.5vh; }
+    a { text-decoration: none; }
+  }
+}
+
+.header,
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer {
+  background-color: #D2E9A4;
+  background-color: #760D64;
+  background-color: #5C5880;
+  background-color: #143048;
+  background-color: #0B5E7E;
+  color: #fff;
+  text-align: center; 
+  ul { text-align: center; }
+  li { display: inline-block; }
+  a { font-size: 1.325rem; color: #fff; text-decoration: none; }
+  li a { padding: 0 1vw; }
+}
+
+.header {
+  /*border-bottom: 3px #5c5880 solid;*/
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.footer {
+  padding: 15px 15px;
+  border-top: 7px solid #e5e5e5;
+  border-bottom: 10px solid #B59336;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+.container {
+  /*
+   *background: rgba(0, 0, 0, .8);
+   *color: #fff;
+   */
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 0;
+  }
+
+  .header,
+  .marketing {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header {
+  }
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+button { border: none; background: none; }
+button + button { margin-left: 1rem; }
+label {
+  min-width: 5rem;
+}
+.form-group { margin-bottom: 1vh; }
+
+/*** ==========================================================================
+
+***/
+
+
+.simple-search {
+  overflow: hidden;
+  button {
+    position: absolute;
+    top: -2rem;
+    left: .5rem;
+    border: none; background: none; }
+
+  .field { width: 100%; float: left; }
+  .field input {
+    width: 100%;
+    padding: 1vh 1vh 1vh 10vh;
+    border: none;
+    font-size: 1.325rem;
+  }
+  .field.action { float: left; position: relative; }
+  md-input-container {
+    position: absolute;
+    right: .5rem;
+    top: -2.75em;
+    z-index: 9000;
+    font-size: 1.325rem;
+  }
+  .field.action select {
+    /*top: -2em; position: absolute; right: .5rem; z-index: 9000; */
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--repair--ideas {
+  padding: 5vw 15px 7vw;
+  background: url(/images/blocknext-bg-2.jpg) 0 top no-repeat;
+  background-size: cover;
+  font-size: 1.325rem;
+  h1 { margin-bottom: 1rem; text-align: center; font-size: 2.5rem; color: #fff; }
+  p { max-width: 75%; text-align: center; font-size: 1.325rem;
+    margin: 0 auto 3vh;
+    /*
+     *border-top: 5px #C2AEA4 solid;
+     *border-bottom: 5px #C2AEA4 solid;
+     */
+  }
+  a { color: #fff; }
+}
+
+.view--list--books {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  font-size: 1.325rem;
+  color: #fff;
+  h2 { margin: 0 10px 0 0; }
+  h2 { min-height: 15vh; }
+  h2 { font-size: 1.75rem; color: #111; }
+  figcaption {
+    border-bottom: 5px solid #B59336;
+  }
+  a { color: #fff; text-decoration: none; }
+  li { width: 31%; min-width: 31%; padding: 1%; }
+  li:nth-child(1n+1) { padding-left: 0; width: 32%; min-width: 32%; }
+  li:nth-child(3n) { padding-right: 0; width: 32%; min-width: 32%; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--search--properties {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  margin-bottom: 3vh;
+  & > p { font-size: 1.325rem; text-align: center; margin-bottom: 1vw; }
+  h1 { padding: 0 15px; margin-bottom: 1rem; text-align: center; font-size: 2.5rem; }
+  figcaption {
+    font-size: 1.325rem;
+  }
+  dl { }
+  dl { 
+    justify-content: space-around;
+    display: flex; }
+  figcaption p { padding-top: .5rem; margin-top: 1rem; border-top: 5px #9A6B08 solid; }
+  dd { padding: 0 5px; margin: 0 5px; color: #fff;
+    background-color: #76B923; }
+}
+
+.view--list--properties {
+  display: flex;
+  overflow: scroll;
+  img { width: 100%; }
+  li {
+    min-width: 50%;
+    max-width: 50%;
+  }
+  figcaption { padding: 3vh 15px; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.login--form {
+  label { float: left; width: 100px; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--masthead {
+  h1 {
+  }
+  text-align: center;
+  padding: 15vw 0 20vw;
+  font-size: 2rem;
+  background: url(/images/blocknext-bg-4.jpg) bottom center no-repeat;
+  color: #fff;
+  /*background-size: cover;*/
+  background-size: cover;
+  .inner { max-width: 70%; margin: 0 auto; position: relative; top: -5vmin; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--learn {
+  z-index: 10;
+  position: relative;
+  background-color: #fff;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  .primary {
+    text-align: center;
+    iframe {
+      min-width: 75%;
+      min-height: 25vw;
+    }
+    color: #111;
+    font-size: 1.325rem;
+    figcaption { text-align: center; padding: 0 2vw 0 3vw; }
+  }
+  .action {
+    text-align: center;
+    margin: 1rem 0 0 0;
+  }
+  .secondary {
+    .inner {
+      margin: 0 auto;
+      position: relative;
+      background-color: #1E9277;
+      background-color: #5C5880;
+      color: #fff;
+      padding: 4vw;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .secondary {
+    .inner {
+      max-width: 50%;
+      padding: 3vw;
+    }
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.cta--columnar--default {
+  display: flex;
+  flex-direction: column;
+  .primary,
+  .secondary { width: 100%; }
+}
+@media screen and (min-width: 768px) {
+
+  .cta--columnar--default {
+    flex-direction: row;
+    .primary,
+    .secondary { width: 50%; }
+  }
+}
+
+.cta--columnar--default.home--select {
+  .secondary { width: 100%; right: 0; }
+}
+@media screen and (min-width: 768px) {
+  .cta--columnar--default.home--select {
+    .secondary { width: 45%; right: 5vh; }
+  }
+}
+ 
+.cta--columnar--triple {
+  padding: 5vw 0;
+  ul {
+    display: flex;
+  }
+  .fa { font-size: 3rem; }
+  li { text-align: center; width: 33%; }
+}
+
+.cta--columnar--quad {
+  padding: 0 0 5vw 0;
+  ul {
+    display: flex;
+  }
+  .fa { font-size: 3rem; }
+  li { text-align: center; width: 25%; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--why {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  color: #111;
+  font-size: 1.725rem;
+  text-align: center;
+  padding-bottom: 7vw;
+  h1 { 
+  padding: 2.5vw 0 0;
+  margin-bottom: 1.5rem; }
+  p { max-width: 65%; margin: 0 auto; text-align: left; }
+  p { margin-bottom: 1.325rem; }
+}
+
+/*** ==========================================================================
+
+***/
+
+.home--tale { 
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 5vw;
+  h2 { font-size: 2.325rem; text-align: center; }
+  h3 { font-size: 1.2rem; color: #ccc; text-align: center; }
+  table { max-width: 50%; border-collapse: collapse; margin: 0 auto; font-size: 2rem; }
+  .item-header { text-align: right; min-width: 20vw; border-right: 3px #ccc solid; }
+  .person-header { text-align: left; }
+  tbody tr:first-child td { border-top: 3px #ccc solid; }
+  table tr:nth-child(even) { background-color: #E8D087; }
+  table td, table th { padding: 1vw; }
+  .wide { min-width: 25vw; }
+}
+
+/*** ==========================================================================
+
+***/
+
+.home--benefits {
+  color: #fff;
+  border-top: 5px #f9f9f9 solid;
+  /*box-shadow: 0px 0px 0px 4px #006B96;*/
+  /*
+   *border: 4px solid #f9f9f9;
+   *border-top-left-radius: 5px;
+   *border-bottom-right-radius: 5px;
+   */
+  min-height: 100px;
+  padding: 25vw 0 10vh 0;
+  background: url(/images/blocknext-bg-1.jpg) bottom center no-repeat;
+  background-size: cover;
+  font-size: 1.325rem;
+  li { margin-left: 1rem; margin-right: 1rem; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--select,
+.home--max {
+  padding: 5vw 0;
+  z-index: 10;
+  position: relative;
+  background-color: #5C5880;
+  .primary { 
+    width: 80%;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .secondary { 
+    position: relative;
+    width: 100%;
+    text-align: right;
+    /*top: 5vh;*/
+    button {
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .home--select,
+  .home--max {
+    .primary {
+      width: 50%;
+    }
+  }
+  .home--select,
+  .home--max {
+    .secondary {
+      right: 25vh;
+      width: 35%;
+    }
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.secondary {
+  button {
+    background-color: #57A992;
+    background-color: #990033;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.25vw 2vw;
+    text-transform: uppercase;
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--how {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  font-size: 1.325rem;
+  padding-bottom: 0 !important;
+  header {
+    color: #fff;
+    position: relative;
+    /*min-height: 10vh;*/
+    h1 { padding-top: 4rem; position: relative; z-index: 2; text-align: center; margin-bottom: 1.5rem; }
+    &:before {
+      position: absolute;
+      z-index: -1;
+      display: block;
+      content: ' ';
+      width: 100%;
+      height: 60vw;
+      background: url(/images/blocknext-bg-2.jpg) bottom center no-repeat;
+      background-size: cover;
+    }
+  }
+  ul { 
+    /*min-height: 100px; */
+    width: 100%; 
+    /*position: absolute; */
+    padding-top: 10vmin; 
+    padding-bottom: 20vmin; 
+    z-index: 2; }
+  h2 { text-align: center; margin-bottom: 1rem; }
+}
+
+@media screen and (min-width: 768px) {
+  .home--how {
+    /*padding-bottom: 30vmax;*/
+    ul { }
+  }
+}
+
+
+/*** ==========================================================================
+
+***/
+
+
+.home--numbers {
+  padding: 10vw 0;
+  background-color: #5FD7AA;
+  background-color: #795F5D;
+  color: #fff;
+  background: url(/images/blocknext-bg-5.jpg) bottom center no-repeat;
+  background-size: cover;
+  h1 { padding-top: 2rem; text-align: center; margin-bottom: 1.5rem; }
+  .stats--symbol-1 { color: #fff; font-size: 2rem; }
+  p { font-size: 1.325rem; color: #666; color: #fff; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--saying {
+  z-index: 10;
+  position: relative;
+  background-color: #fff;
+  h1 { padding: 8vh;
+    background-color: #478660;
+    background-color: #54336D;
+    background-color: #5C5880;
+    text-align: center; color: #fff; }
+  ul { display: flex; flex-direction: column; }
+  li { width: 100%; }
+  li { figcaption { line-height: 1.325; width: 50%; float: right; } }
+  li figcaption { 
+    font-size: 1.325rem; 
+    width: 100%;
+    blockquote { 
+      p { margin-bottom: 1rem; }
+      /*div { text-align: right; color: #ccc; font-style: italic; }*/
+      padding: 3vw 6vw; } } 
+  line-height: 0;
+  .quote--container {
+    width: 100%; 
+    text-align: center;
+    padding: 10vw 0;
+    img { object-fit: contain; width: 100%; }
+  }
+  .quote--container { float: left; }
+  .right { float: right; }
+  .quote--container,
+  .right {
+    clear: both;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home--saying {
+    .quote--container {
+      width: 50%;
+    }
+    li figcaption {
+      width: 50%;
+      font-size: 2rem;
+    }
+    .quote--container,
+    .right {
+      clear: none;
+    }
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--faq { 
+  font-size: 1.325rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  padding: 5vw 3vw;
+  h1 { text-align: center; font-size: 2rem; margin-bottom: 1.5rem; }
+  ul { display: flex; flex-flow: row wrap; }
+  li { width: 100%; }
+  figure { padding: 1vw; font-size: 1.5rem; }
+  .question--container { margin-bottom: .5rem; font-size: 2rem; }
+  .figcaption { font-size: 2rem; }
+}
+@media screen and (min-width: 768px) {
+  .home--faq {
+    ul { display: flex; flex-flow: row wrap; }
+    li { width: 50%; }
+  }
+}
+ 
+/*** ==========================================================================
+
+***/
+
+
+.home--questions { 
+  padding: 7.5vw 0;
+  background: url(/images/blocknext-bg-2.jpg) 0 bottom no-repeat;
+  background-size: cover;
+  h1 { color: #fff; font-size: 2rem; text-align: center; margin-bottom: 1rem; }
+  p { text-align: center; }
+  a {
+    background-color: #57A992;
+    background-color: #990033;
+    font-size: 1.5rem; 
+    text-decoration: none; 
+    display: inline-block;
+    color: #fff;
+    padding: .5vw 1vw;
+  }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+.home--roi {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  #roi--finish {
+    .secondary {
+      padding: 0 2vw;
+    }
+  }
+  select, md-radio-button.md-default-theme .md-off, md-radio-button .md-off {
+    color: #fff;
+    border-color: #fff;
+  }
+  .md-select-value {
+    color: #fff;
+  }
+  md-input-container label {
+    color: #fff !important;
+  }
+  .md-input-focused {
+    .md-text {
+      color: #fff;
+    }
+  }
+  .md-select-value.md-select-placeholder,
+  .md-select-placeholder {
+    border-color: #fff;
+    color: #fff;
+  }
+  background-color: #52857F;
+  background-color: #54336D;
+  background-color: #5C5880;
+  .inner {
+    /*background: url(/images/blocknext-bg-1.jpg) bottom center no-repeat;*/
+    /*background-size: cover;*/
+    /*background-color: #990033;*/
+  }
+  color: #fff;
+  select { width: 50%; margin: 0 auto; }
+  .field--lender__type {
+    max-width: 50%;
+    margin: 0 auto;
+    select { color: #fff; }
+  }
+  h3 { margin-top: 1.5rem; }
+  .inline {
+    text-align: center;
+    display: flex;
+    label { width: 50%; }
+    md-radio-button {
+      display: inline;
+      margin: 0 1rem;
+    }
+    md-radio-group {
+      margin: 0 auto;
+      .md-container { margin-top: -.25em; } }
+  }
+  .input-section {
+    display: flex;
+  }
+  .input-section .primary {
+    width: 50%;
+  }
+  .input-section .secondary {
+    width: 50%;
+  }
+  button {
+    background-color: #FCEBAF;
+    background-color: #483260;
+    color: #fff;
+    font-size: 1.5rem;
+    display: inline;
+    max-width: 50%;
+    padding: 1.5rem 2.325rem;
+    margin: 0 auto;
+  }
+  h1 { margin: 1vw 0; }
+  .inner {
+    background-color: #5C5880;
+    background-color: #A0C0D0;
+    background: rgba(0, 0, 0, .45);
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 2vw 0;
+  }
+  text-align: center;
+  padding: 2vw 0 5vw 0;
+  font-size: 1.5rem; 
+  .field {
+    display: flex;
+    flex-direction: column;
+    div { margin-bottom: 1rem; }
+  }
+
+  input { padding: 0 .5rem; font-size: 1.5rem; }
+  label { display: block; margin-bottom: 1rem; }
+  .fixture { position: absolute; margin-left: .5rem; }
+}
+
+/*** ==========================================================================
+
+***/
+
+
+g > g.arc {
+  stroke: white;
+  stroke-width: 3;
+}
+
+g > text {
+  stroke: black;
+  stroke-width: 2;
+}
+
+.angular-leaflet-map {
+  z-index: 4 !important;
+}
+
+.image--alignment--left { float: left; }
+.key-features { 
+  ul { list-style: disc; }
+  li { margin-bottom: 1rem; }
+  font-size : 1.5rem; }

@@ -1,0 +1,86 @@
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    title Block Next
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    // build:css(.) styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css(.tmp) styles/main.css
+    link(rel='stylesheet', href='styles/css/main.css')
+    link(type='text/css', rel='stylesheet', href='http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css')
+    link(rel='stylesheet', href='scripts/ext/esri-leaflet-geocoder.css')
+    link(rel='stylesheet', href='scripts/ext/angular-material.css')
+    link(href='https://fonts.googleapis.com/css?family=Abel&effect=fire|3d-float', rel='stylesheet', type='text/css')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // endbuild
+    script(data-main='scripts/main.js', src='scripts/ext/require.js')
+
+  body
+    //if lt IE 7
+      p.browsehappy
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    .header(zum-waypoint="waypoints", down="flags.on", up="flags.off", class="font-effect-3d-float")
+      .navbar.navbar-default(role='navigation')
+        .inner
+          .navbar-header
+            a.navbar-brand(href='#/')
+              img(src='/images/logo.png', alt='Block Next')
+          .collapse
+            ul.nav.navbar-nav
+              li.active
+                a(ng-click="scrollTo('why')") Why Block Next
+              li
+                a(ng-click="scrollTo('how')") How it works
+              li
+                a(ng-click="scrollTo('success')") Products
+              li
+                a(ng-click="scrollTo('faq')") Learn More
+              li
+                a(ng-href='#/chat') Chat
+              | <!--li a(ng-click="scrollTo('roi')") Sell Bitcoin span ($534.34 USD) -->
+              li
+                | <a ng-hide-auth href='#/login'>Login</a>
+                | <!-- <a ng-show-auth href='#/account'>Account</a>-->
+    .container
+      div(ng-view='')
+    .footer
+      .container
+        ul
+          li
+            a(href="#/sitemap") Sitemap
+          li
+            a(href="#/privacy-policy") Privacy Policy
+          li
+            a(href="#/terms-of-service") Terms of Service
+        p
+          span.glyphicon.glyphicon-heart
+          |  <a href="http://blocknext.com">Block Next</a>. All Rights Reserved.
+
+    script.
+      !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+      (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+      r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+      }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    //if lt IE 9
+      script(src='scripts/ext/es5-shim.js')
+      script(src='scripts/ext/json3.js')
+    // build:js(.) scripts/vendor.js
+    // bower:js
+    // endbower
+    // endbuild
+    // build:js({.tmp,app}) scripts/scripts.js
+    // endbuild
+    // @exclude
+    script(type='text/javascript', src='http://localhost:8080/livereload.js?snipver=1')
+    // @endexclude
+
